@@ -1,0 +1,21 @@
+# 一.对RecyclerView的知识点全面讲解
+
+引入依赖包：有时候v7支持包中是没有的,应该进行引入并且其版本和编译环境的相同(注意是编译环境相同,eg:compileSdkVersion 27,只需要将地下的23变成27即可).
+
+    compile 'com.android.support:recyclerview-v7:23+'
+
+## 二.增加头部的两种方式
+
+### 2.1 Adapter方式增加头部(FirstHeaderRecyclerView)
+
+知识点:
+
+1. BaseAdapter的抽取和抽象,留下了变化的item布局和绑定数据;
+2. 分割线设置方式(只是LinearLayoutManager其他的暂未研究透)
+3. LinearLayoutManager,GridLayoutManager,StaggeredGridLayoutManager三种方式,
+正反布局都是可以的.注意瀑布流适应了item的自身的.
+4. 头部占一个不同的单元格时不同布局对应的设计方法.
+
+### 2.2 使用装饰者模式(FirstHeaderRecyclerView)
+
+

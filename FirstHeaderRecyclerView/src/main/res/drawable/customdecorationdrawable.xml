@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient
+        android:centerColor="#ff00ff00"
+        android:endColor="#ff0000ff"
+        android:startColor="#ffff0000"
+        android:type="linear"/>
+
+    <size android:height="3dp"/>
+
+    <!--此时的留白不起作用了-->
+    <padding
+        android:left="15dp"
+        android:right="15dp"/>
+
+
+</shape>
