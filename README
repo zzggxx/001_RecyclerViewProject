@@ -28,6 +28,8 @@
 
 ### 2.3 多布局管理者模式的讲解
 
+[hongyangAndroid/baseAdapter传送门](https://github.com/hongyangAndroid/baseAdapter)
+
 1. 有两种都叫做MultiItemTypeAdapter,一个是继承自baseAdapter一个是RecyclerView.Adapter
 2. ItemViewDelegate定义布局,数据匹配,填充数据.三种方法,而ItemViewDelegateManager
 是对其布局的方法引用,MultiItemTypeAdapter引用ItemViewDelegateManager管理布局和类型
