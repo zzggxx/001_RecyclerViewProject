@@ -18,4 +18,25 @@
 
 ### 2.2 使用装饰者模式(FirstHeaderRecyclerView)
 
+知识点:
+
+1. 可以随意的增加头部和尾部,并且里边的Adapter可以和没有头部的RecyclerView共用一
+个,在项目的后期其拓展性的方面是有很大的帮助的
+2. 这里的装饰就是将Adapter层层的包装.为每一个headerView或者footerView都添加了
+一个itemType.
+3. 关于多布局的管理者模式的讲解
+
+### 2.3 多布局管理者模式的讲解
+
+1. 有两种都叫做MultiItemTypeAdapter,一个是继承自baseAdapter一个是RecyclerView.Adapter
+2. ItemViewDelegate定义布局,数据匹配,填充数据.三种方法,而ItemViewDelegateManager
+是对其布局的方法引用,MultiItemTypeAdapter引用ItemViewDelegateManager管理布局和类型
+3. 注意MainActivity中ListView的使用的是一种布局,而MultiItemListViewActivity
+使用的多种布局.
+4. 多种布局中布局和填充数据的方法判断是一个也没有少只是方法增多了变得更加简洁了而已.
+5. ListView 和 RecyclerView 的布局管理者都是一样的,只是继承的Adapter不一样罢了
+6. ItemViewDelegate 就是将布局,类型区分,绑定数据抽出了Adapter之外,有利于
+Item的复用,eg:RecyclerView A(有item类型1234) 和 B(有item类型23456) 那么他们大部分是一样的
+所以把他们抽出来起到了<font color=#ff0000>**复用item**</font>的效果.
+
 
