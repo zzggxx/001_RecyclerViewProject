@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="refresh_bg">#B3E5FC</color> <!-- 500 -->
+    <color name="control_highlight_blue_grey">#cfd8dc</color>    <!-- 100 -->
+    <color name="button_normal_blue_grey">#607d8b</color> <!-- 500 -->
+    <color name="action_blue">#5677fc</color>        <!-- 500 -->
+
 </resources>

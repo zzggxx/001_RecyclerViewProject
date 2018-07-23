@@ -110,7 +110,7 @@ public class HeaderAndFooterWrapper<T> extends RecyclerView.Adapter<RecyclerView
 
 
     /**
-     * 绑定数据,后边的拓展.
+     * 绑定数据,后边的拓展.这里仅仅只是为了展示才直接return的,尤其是联网请求的时候数据要做好封装性.
      *
      * @param holder
      * @param position
