@@ -43,9 +43,24 @@ RecyclerView A(有item类型1234) 和 B(有item类型23456) 那么他们大部�
 
 1. Person类是被装饰者的原始对象,可以是一个抽象或者一个接口.
 2. 而Boy就是我们的需要的重点对象,被装饰者.
-3. PersonCloth是我们重点要为其装饰者添加更多属性或者功能的类,有着很重要的职责,其内部必须要有一个被装饰者的引用.
+3. PersonCloth是我们重点要为其装饰者添加更多属性或者功能的类,有着很重要的职责,其内部必须要有一个被装饰者的引用.如果装饰逻辑单一可以直接省略该类,直接的使用ExpensiveCloth并在其中引用对象.
 4. ExpensiveCloth就是具体实现类.
 5. 单元测试就是客户的调用.
+
+![UML](https://raw.githubusercontent.com/zzggxx/Picture/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/decorator_pattern.jpg)
+
+这里的抽离模式是更加的充分,目前水平有限先贴出地址以后学习,
+[传送门](https://github.com/drakeet/MultiType)
+
+## 五.ChangeUISpecialMethods,UI新的更新方法.
+
+* notifyItemChanged(int position) 更新列表position位置上的数据可以调用,更新的时候还是刷新的控件级别吧,因为若是有图片什么的会造成图片闪烁的问题.
+* notifyItemInserted(int position) 列表position位置添加一条数据时可以调用，伴有动画效果
+* notifyItemRemoved(int position) 列表position位置移除一条数据时调用，伴有动画效果,但是这个删除是有问题的,应该先更新数据源,然后移除并且更新后边的数据,参加demo即可.并且应该注意若是走网络删除,操作前后应该锁定操作按钮.
+* notifyItemMoved(int fromPosition, int toPosition) 列表fromPosition位置的数据移到toPosition位置时调用，伴有动画效果
+* notifyItemRangeChanged(int positionStart, int itemCount) 列表从positionStart位置到itemCount数量的列表项进行数据刷新
+* notifyItemRangeInserted(int positionStart, int itemCount) 列表从positionStart位置到itemCount数量的列表项批量添加数据时调用，伴有动画效果
+* notifyItemRangeRemoved(int positionStart, int itemCount) 列表从positionStart位置到itemCount数量的列表项批量删除数据时调用，伴有动画效果
 
 
 

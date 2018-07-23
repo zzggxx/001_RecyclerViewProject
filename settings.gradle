@@ -1,1 +1,1 @@
-include ':FirstHeaderRecyclerView', ':SecondHeaderRecyclerview'
+include ':FirstHeaderRecyclerView', ':SecondHeaderRecyclerview', ':ChangeUISpecialMethods'
