@@ -67,8 +67,6 @@ public class MainActivity extends AppCompatActivity {
                     //添加模拟数据到第一项
                     mTitle.set(0, "哎呦我去~~~~~" + ++i);
                     mRecyclerViewAdapter.notifyItemChanged(0);
-//                    删除会错乱所以应该是同步数据
-                    mRecyclerViewAdapter.notifyItemRangeChanged(0, mRecyclerViewAdapter.getItemCount());
                     break;
 
                 case R.id.menu_add:
@@ -86,6 +84,8 @@ public class MainActivity extends AppCompatActivity {
                     mTitle.remove(0);
                     //RecyclerView 列表进行UI数据更新
                     mRecyclerViewAdapter.notifyItemRemoved(0);
+                    //                    删除会错乱所以应该是同步数据
+                    mRecyclerViewAdapter.notifyItemRangeChanged(0, mRecyclerViewAdapter.getItemCount());
                     break;
 
                 case R.id.menu_move:

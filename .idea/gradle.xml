@@ -8,7 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ChangeUISpecialMethods" />
             <option value="$PROJECT_DIR$/FirstHeaderRecyclerView" />
+            <option value="$PROJECT_DIR$/SecondHeaderRecyclerview" />
+            <option value="$PROJECT_DIR$/SlideDeleteAndMoveChangePosition" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ChangeUISpecialMethods/ChangeUISpecialMethods.iml" filepath="$PROJECT_DIR$/ChangeUISpecialMethods/ChangeUISpecialMethods.iml" />
       <module fileurl="file://$PROJECT_DIR$/FirstHeaderRecyclerView/FirstHeaderRecyclerView.iml" filepath="$PROJECT_DIR$/FirstHeaderRecyclerView/FirstHeaderRecyclerView.iml" />
       <module fileurl="file://$PROJECT_DIR$/RecyclerViewProject.iml" filepath="$PROJECT_DIR$/RecyclerViewProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SecondHeaderRecyclerview/SecondHeaderRecyclerview.iml" filepath="$PROJECT_DIR$/SecondHeaderRecyclerview/SecondHeaderRecyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SlideDeleteAndMoveChangePosition/SlideDeleteAndMoveChangePosition.iml" filepath="$PROJECT_DIR$/SlideDeleteAndMoveChangePosition/SlideDeleteAndMoveChangePosition.iml" />
     </modules>
   </component>
 </project>

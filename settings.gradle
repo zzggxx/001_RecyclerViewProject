@@ -1,1 +1,1 @@
-include ':FirstHeaderRecyclerView', ':SecondHeaderRecyclerview', ':ChangeUISpecialMethods'
+include ':FirstHeaderRecyclerView', ':SecondHeaderRecyclerview', ':ChangeUISpecialMethods', ':SlideDeleteAndMoveChangePosition'
