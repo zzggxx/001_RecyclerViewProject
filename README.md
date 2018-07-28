@@ -25,6 +25,8 @@
 2. 这里的装饰就是将Adapter层层的包装.为每一个headerView或者footerView都添加了一个itemType.
 3. 关于多布局的管理者模式的讲解
 
+思考:这里的使用方法是装饰者模式,是使用的更加优雅呢还是根本就不是呢?
+
 ## 三.多布局管理者模式的讲解
 
 [hongyangAndroid/baseAdapter传送门](https://github.com/hongyangAndroid/baseAdapter)
@@ -56,7 +58,7 @@ RecyclerView A(有item类型1234) 和 B(有item类型23456) 那么他们大部�
 
 * notifyItemChanged(int position) 更新列表position位置上的数据可以调用,更新的时候还是刷新的控件级别吧,因为若是有图片什么的会造成图片闪烁的问题.
 * notifyItemInserted(int position) 列表position位置添加一条数据时可以调用，伴有动画效果
-* notifyItemRemoved(int position) 列表position位置移除一条数据时调用，伴有动画效果,但是这个删除是有问题的,应该先更新数据源,然后移除并且更新后边的数据,参加demo即可.并且应该注意若是走网络删除,操作前后应该锁定操作按钮.
+* notifyItemRemoved(int position) 列表position位置移除一条数据时调用，伴有动画效果,但是这个删除是有问题的,应该先更新数据源,然后移除并且更新后边的数据,参见demo即可.并且应该注意若是走网络删除,操作前后应该锁定操作按钮.
 * notifyItemMoved(int fromPosition, int toPosition) 列表fromPosition位置的数据移到toPosition位置时调用，伴有动画效果
 * notifyItemRangeChanged(int positionStart, int itemCount) 列表从positionStart位置到itemCount数量的列表项进行数据刷新
 * notifyItemRangeInserted(int positionStart, int itemCount) 列表从positionStart位置到itemCount数量的列表项批量添加数据时调用，伴有动画效果
